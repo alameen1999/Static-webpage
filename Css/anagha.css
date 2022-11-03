@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    /* margin:0; padding:0; */
+    box-sizing: border-box;
+    /* text-transform: capitalize;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear; */
+  }
+
+  h1{
+    padding-top: 10px;
+    padding-bottom: -10px;
+    color:rgb(45, 184, 156);
+}
+
+.rules
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: -5rem;
+    min-height: 100vh;
+    background:white;;
+    background-size: 100%;
+     padding-bottom: 7rem; 
+}
+
+.rules__container 
+{
+    font-size: larger;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+   
+   
+}
+
+.rulesCards
+ {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 9rem; 
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.line1,.line2 
+{
+    position: absolute;
+    width: 220px;
+    pointer-events: none;
+}
+
+.line1 {
+    left: 17%;
+    top: -8%;
+}
+
+.line2 {
+    left: 52%;
+    top: 19%;
+}
+
+.rulesCard {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    
+    
+}
+
+
+.efc1 {
+    transform: translateY(-30%);
+    width:890px;
+    height: 550px;
+    box-shadow: 0 1rem 2rem black;
+    padding:30px;
+    margin:10px;
+    padding-top: 15px;
+
+   
+}
+
+
+.efc2
+{
+    transform: translateY(1%);
+    width:850px;
+    height: 500px;
+    box-shadow: 0 1rem 2rem black;
+    padding:30px;
+    margin:10px;
+    padding-top: 15px;
+}
+
+.efc3 {
+
+    transform: translateY(30%);
+    width:800px;
+    height: 420px;
+    box-shadow: 0 1rem 2rem black;
+    padding:50px;
+    margin:10px;
+    padding-top: 15px;
+}
+
+
+.rulesCard h2 {
+    color:rgb(45, 184, 156);
+    font-weight: 600;
+    font-size: 1.65rem;
+    text-transform: capitalize;
+    
+}
+
+.rulesCard p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    width: 90%;
+    padding-top: 0px;
+    padding-bottom: 5rem; 
+
+    }
+
+
+
+
+
+   

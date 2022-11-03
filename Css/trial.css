@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+ .problemStmt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 2rem;
+} 
+#problem{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+.ps__card_title{
+  font-size: 1.5rem;
+}
+.ps__header{
+  text-align:center;
+  padding: 2.5rem 0;
+}
+.ps__header span{
+  color: rgb(45, 184, 156);
+  font-size: 3rem;
+  /* font-family: 'Poppins'; */
+  padding: 2rem .5rem;
+  border-radius: .5rem;
+
+  font-weight: 400;
+}
+.problemStmt__container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 0;
+}
+
+.problemStmt__cards {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+  padding: 1.5rem;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.problemStmtCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 250px;
+  height: 300px;
+  background: linear-gradient(180deg, rgb(45, 184, 156, 0.75) 0%, #eef4f5 100%), #0f110f;
+  box-shadow: 0.8px 0.8px 4px 0.5px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  gap: 1rem;
+}
+.ps_image{
+  height: 20rem;
+  pointer-events: none;
+}
+
+.problemStmtCard h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.problemStmtCard .ps_button-container {
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #0b0909d7;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.1px solid #ffffff27;
+  backdrop-filter: blur(200px);
+  border-radius: 8px;
+  padding: 0.55rem 1.5rem;
+  cursor: pointer;
+}
+.problemStmtCard .ps_button-container:hover {
+  color: rgb(45, 184, 156);
+  /* background: rgba(255, 255, 255, 0.1); */
+  border: 0.1px solid #ffffffe7;
+}
+
+.ps_main_vector{
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+
+.problemStmtCard h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.ps_overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.ps_overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position:relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .ps_close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #0a0b0a;
+}
+.popup .ps_content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/* .ps_card-extra{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 6rem;
+  margin-top: -3rem;
+  position: relative;
+  
+} */
+
+
