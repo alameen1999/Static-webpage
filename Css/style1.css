@@ -51,54 +51,74 @@ section{
 
 
 /* reward section */
-.gallery .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap:1.5rem;
+.mainbox{
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 100px;
 }
-
-.gallery .box-container .box{
-  overflow: hidden;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-  border:1rem solid #fff;
-  border-radius: .5rem;
-  flex:1 1 30rem;
-  height: 25rem;
-  position: relative;
-}
-
-.gallery .box-container .box img{
-  height: 100%;
-  width:100%;
-  object-fit: cover;
-}
-
-.gallery .box-container .box .content{
-  position: absolute;
-  top:-100%; left:0;
-  height: 100%;
-  width:100%;
-  text-align: center;
-  background:rgba(30, 30, 30, 0.7);
-  padding:2rem;
-  padding-top: 5rem;
-}
-
-.gallery .box-container .box:hover .content{
-  top:0;
-}
-
-.gallery .box-container .box .content h3{
-  font-size: 2.5rem;
-  color: rgb(45,184,156);
-}
-
-.gallery .box-container .box .content p{
-  font-size: 1.5rem;
-  color:#eee;
-  padding:.5rem 0;
-}
-
+.box {
+    width: 400px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+   
+   
+  }
+  
+  .imageBox {
+    width: 100%;
+    height: 400px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .contentBox {
+    position: absolute;
+    display: flex;
+    background: #80cdd9c7;
+    border-radius: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0px;
+    cursor: pointer;
+    text-align: center;
+    height: 80px;
+    transition: height 1s;
+    overflow: hidden;
+  }
+  
+  .contentBox:hover {
+    height: 100%;
+    justify-content: center;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .infoPart {
+    font-size: 10px;
+  }
+  
+  .lead
+   {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .over {
+    display: block;
+    opacity: 1;
+  }
 
 
 /* contact us section */
