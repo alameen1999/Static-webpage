@@ -15,4 +15,20 @@ mapclick.addEventListener("click",()=>{
 
 });
 
+const contentBox = document.querySelectorAll(".contentBox");
+const lead = document.querySelector(".lead");
+
+
+contentBox.forEach((box) => {
+  box.addEventListener("mouseenter", (e) => {
+    e.target.querySelector(".lead").classList.add("over");
+   
+  });
+
+  box.addEventListener("mouseleave", (e) => {
+    e.target.querySelector(".lead").classList.remove("over");
+   
+  });
+});
+
     

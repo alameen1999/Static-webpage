@@ -15,7 +15,7 @@ menu.addEventListener('click', () =>{
     navbar.classList.toggle('active');
 });
 
-let countDate = new Date('nov 6, 2022 00:12:00').getTime();
+let countDate = new Date('nov 30, 2022 10:00:00').getTime();
 
 function countDown(){
     let now = new Date().getTime();
@@ -35,14 +35,17 @@ function countDown(){
     document.getElementById('hour').innerText = h;
     document.getElementById('min').innerText = m;
     document.getElementById('second').innerText = s;
+
+    if (gap<0){
+        clearInterval(counter);
+    }
 }
 
 
-setInterval(countDown, 1000)
+let counter = setInterval(countDown, 1000)
 
-// if (gap<0)
-// clearInterval(shibu)
 
-// if(gap<0){
-//     clearInterval(interval);
-// }
+
+
+
+
