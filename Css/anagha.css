@@ -2,15 +2,15 @@
 h1{
     text-align: center;
     font-family: 'Nunito', sans-serif;
-    padding-top: 40px;        /*From top*/
-    padding-bottom: 50px;     /*From bottom*/
+    padding-top: 10px;        /*From top*/
+    padding-bottom: 120px;     /*From bottom*/
     color:rgb(45, 184, 156);
     font-size: xx-large;
   }
   
   *{
     font-family: 'Nunito', sans-serif;
-    /* margin:0; padding:0; */
+    margin:0; padding:0;
     box-sizing: border-box;
     transition: all .2s linear;
   }
@@ -20,6 +20,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     gap:4rem;
+    padding-bottom:200px;
   }
   
   /* container css */
@@ -29,7 +30,7 @@ h1{
     border:1rem solid white;
     border-radius: .5rem;
     flex:0.5rem;
-    height: 20rem;
+    height: 30rem;
     position: relative;
   }
   
@@ -56,12 +57,12 @@ h1{
   }
   
   .rules .box-container .box .content h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color:rgb(45, 184, 156);
   }
   
   .rules .box-container .box .content p{
-    font-size: 1.0rem;
+    font-size: 1.5rem;
     color:#eee;
    
   }
