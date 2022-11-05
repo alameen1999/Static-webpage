@@ -1,69 +1,70 @@
 
 h1{
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    padding-top: 10px;        /*From top*/
-    padding-bottom: 120px;     /*From bottom*/
-    color:rgb(45, 184, 156);
-    font-size: xx-large;
-  }
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  padding-top: 40px;        /*From top*/
+  padding-bottom: 50px;     /*From bottom*/
+  color:rgb(45, 184, 156);
+  font-size:xx-large;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  /* margin:0; padding:0; */
+  box-sizing: border-box;
+  transition: all .2s linear;
+}
+
+/* Gap betweeen the containers */
+.rules .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:4rem;
+  padding-bottom:10px;
+}
+
+/* container css */
+.rules .box-container .box{
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border:1rem solid white;
+  border-radius: .5rem;
+  flex:0.5rem;
+  height: 30rem;
+  position: relative;
+  padding-bottom:70px;
+}
+
+.rules .box-container .box img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
   
-  *{
-    font-family: 'Nunito', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    transition: all .2s linear;
-  }
-  
-  /* Gap betweeen the containers */
-  .rules .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:4rem;
-    padding-bottom:200px;
-  }
-  
-  /* container css */
-  .rules .box-container .box{
-    overflow: hidden;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-    border:1rem solid white;
-    border-radius: .5rem;
-    flex:0.5rem;
-    height: 30rem;
-    position: relative;
-  }
-  
-  .rules .box-container .box img{
-    height: 100%;
-    width:100%;
-    object-fit: cover;
-  }
-  
-  .rules .box-container .box .content{
-    position: absolute;
-    top:-100%; left: 19px;
-    height: 100%;
-    width:100%;
-    text-align: center;
-    background:rgba(0,0,0,.7);
-    padding:2rem;
-    padding-top: 1rem;
-  }
-  
-  
-  .rules .box-container .box:hover .content{
-    top: 2px;
-  }
-  
-  .rules .box-container .box .content h3{
-    font-size: 2rem;
-    color:rgb(45, 184, 156);
-  }
-  
-  .rules .box-container .box .content p{
-    font-size: 1.5rem;
-    color:#eee;
-   
-  }
-  
+}
+
+.rules .box-container .box .content{
+  position: absolute;
+  top:-100%; left: 19px;
+  height: 100%;
+  width:100%;
+  text-align: center;
+  background:rgba(0,0,0,.7);
+  padding:2rem;
+  padding-top: 1rem;
+}
+
+
+.rules .box-container .box:hover .content{
+  top: 2px;
+}
+
+.rules .box-container .box .content h3{
+  font-size: 2rem;
+  color:rgb(45, 184, 156);
+}
+
+.rules .box-container .box .content p{
+  font-size: 1.5rem;
+  color:#eee;
+ 
+}
