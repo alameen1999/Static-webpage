@@ -20,6 +20,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     gap:4rem;
+    padding-bottom: 150px;
   }
   
   /* container css */
@@ -31,6 +32,8 @@ h1{
     flex:0.5rem;
     height: 20rem;
     position: relative;
+    padding-bottom: 70px;
+ 
   }
   
   .rules .box-container .box img{
@@ -56,12 +59,12 @@ h1{
   }
   
   .rules .box-container .box .content h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color:rgb(45, 184, 156);
   }
   
   .rules .box-container .box .content p{
-    font-size: 1.0rem;
+    font-size: 1.5rem;
     color:#eee;
    
   }
