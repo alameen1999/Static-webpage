@@ -15,7 +15,7 @@ menu.addEventListener('click', () =>{
     navbar.classList.toggle('active');
 });
 
-let countDate = new Date('nov 30, 2022 10:00:00').getTime();
+let countDate = new Date('nov 30, 2032 10:00:00').getTime();
 
 function countDown(){
     let now = new Date().getTime();
